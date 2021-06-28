@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/bookShalf/static/css/main.7108545d.chunk.css",
+    "main.js": "/bookShalf/static/js/main.8b7a4e9d.chunk.js",
+    "main.js.map": "/bookShalf/static/js/main.8b7a4e9d.chunk.js.map",
+    "runtime-main.js": "/bookShalf/static/js/runtime-main.d8b7cfa6.js",
+    "runtime-main.js.map": "/bookShalf/static/js/runtime-main.d8b7cfa6.js.map",
+    "static/js/2.2d0baeb1.chunk.js": "/bookShalf/static/js/2.2d0baeb1.chunk.js",
+    "static/js/2.2d0baeb1.chunk.js.map": "/bookShalf/static/js/2.2d0baeb1.chunk.js.map",
+    "index.html": "/bookShalf/index.html",
+    "static/css/main.7108545d.chunk.css.map": "/bookShalf/static/css/main.7108545d.chunk.css.map",
+    "static/js/2.2d0baeb1.chunk.js.LICENSE.txt": "/bookShalf/static/js/2.2d0baeb1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d8b7cfa6.js",
+    "static/js/2.2d0baeb1.chunk.js",
+    "static/css/main.7108545d.chunk.css",
+    "static/js/main.8b7a4e9d.chunk.js"
+  ]
+}
