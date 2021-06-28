@@ -1,0 +1,66 @@
+import {useParams, useHistory} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
+
+import M from 'materialize-css/dist/js/materialize.min.js'
+
+import {Modal} from "./Modal"
+
+function Edit(props){
+const {booksEdit, deletetItem, handleEdit, saveEditBook} = props;
+const {goBack} = useHistory();
+
+
+useEffect(() => {
+  M.AutoInit();
+});
+
+
+    return (
+      <div className = "column">
+          <form className = "col s12">
+            <div className="input-field col s6">
+               <input onChange = {(e) => handleEdit(e)} defaultValue={booksEdit.name} name = "name" id="book-name" type="text" className="validate"/>
+                 <label className="active" htmlFor="first_name2">Book</label>
+            </div>
+
+            <div className="input-field col s6">
+               <input onChange = {(e) => handleEdit(e)} defaultValue={booksEdit.author} name = "author" id="book-author" type="text" className="validate"/>
+                 <label className="active" htmlFor="first_name2">Author</label>
+            </div>
+
+            <div className="input-field col s6">
+               <input onChange = {(e) => handleEdit(e)}  defaultValue={booksEdit.category} name = "category" id="book-category" type="text" className="validate"/>
+                 <label className="active" htmlFor="first_name2">Category</label>
+            </div>
+
+            <div className="input-field col s6">
+               <input onChange = {(e) => handleEdit(e)}  defaultValue={booksEdit.isbn} name = "isbn" id="book-isbn" type="text" className="validate"/>
+                 <label className="active" htmlFor="first_name2">ISBN</label>
+            </div>
+          </form>
+          <button data-target="modal1" onClick = {saveEditBook} className = "btn add modal-trigger">Edit</button>
+          <button onClick = {() => {deletetItem(); goBack()}} className = "btn add right">Back</button>
+     
+
+
+
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+          
+          <div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+
+
+
+     <Modal/>
+       </div>
+    )
+  }
+  export {Edit}

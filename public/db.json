@@ -1,0 +1,14 @@
+ [{
+        "id": 1,
+        "name": "Call of Cthulhu",
+        "author": "Lovecraft",
+        "category": "Horror",
+        "isbn": "978-3-16-148410-0"
+    }, {
+        "id": 2,
+        "name": "Ridges of Madness ",
+        "author": "Lovecraft",
+        "category": "Horror",
+        "isbn": "978-3-16-148410-1"
+    }
+]
